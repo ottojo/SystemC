@@ -1,16 +1,6 @@
 project(Exercise04)
 
-set(CMAKE_FIND_DEBUG_MODE true)
-set(CMAKE_VERBOSE_MAKEFILE true)
-
 find_package(SystemCLanguage REQUIRED)
-
-message(WARNING "${SystemCLanguage_FOUND}")
-message(WARNING "${SystemCLanguage_INCLUDE_DIRS}")
-message(WARNING "${SystemCLanguage_INCLUDES}")
-message(WARNING "${SystemCLanguage_LIBRARIES}")
-message(WARNING "${SystemCLanguage_LIBS}")
-message(WARNING "${SystemCLanguage_DEFINITIONS}")
 
 
 add_executable(simple_fifo main.cpp Producer.cpp Consumer.cpp)
