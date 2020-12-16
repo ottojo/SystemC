@@ -21,7 +21,6 @@ class Consumer : public sc_module {
 
         explicit Consumer(const sc_module_name &name) : sc_module(name) {
             SC_THREAD(process);
-            sensitive << in;
         }
 };
 
